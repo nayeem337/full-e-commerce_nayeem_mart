@@ -55,8 +55,8 @@
                         <span class="hide-menu"> Product Module </span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="table-basic.html"> Add Product </a></li>
-                        <li><a href="table-layout.html"> Manage Product </a></li>
+                        <li><a href="{{route('product.add')}}"> Add Product </a></li>
+                        <li><a href="{{route('product.manage')}}"> Manage Product </a></li>
                     </ul>
                 </li>
                 <li>
@@ -65,7 +65,7 @@
                         <span class="hide-menu"> Order Module </span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="widget-data.html"> Manage Order </a></li>
+                        <li><a href="{{route('admin.all-order')}}"> Manage Order </a></li>
                     </ul>
                 </li>
                 <li>

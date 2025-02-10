@@ -1,7 +1,10 @@
+<script src="{{asset('/')}}website/assets/js/jquery.js"></script>
 <script src="{{asset('/')}}website/assets/js/bootstrap.min.js"></script>
 <script src="{{asset('/')}}website/assets/js/tiny-slider.js"></script>
 <script src="{{asset('/')}}website/assets/js/glightbox.min.js"></script>
+<script src="{{asset('/')}}website/assets/js/xzoom.min.js"></script>
 <script src="{{asset('/')}}website/assets/js/main.js"></script>
+<script src="{{asset('/')}}website/assets/js/setup.js"></script>
 <script type="text/javascript">
     //========= Hero Slider
     tns({
@@ -51,7 +54,8 @@
         let diff = finaleDate - now;
         if (diff < 0) {
             document.querySelector('.alert').style.display = 'block';
-            document.querySelector('.container').style.display = 'none';
+            //  document.querySelector('.container').style.display = 'none';
+            document.querySelector('.container').style.display = 'block';
         }
 
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));

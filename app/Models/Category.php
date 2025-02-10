@@ -64,4 +64,12 @@ class Category extends Model
        self::$category->delete($id);
    }
 
+
+   // one-to-many relationship with Category to SubCategory
+   public function subCategories()
+   {
+       return $this->hasMany(SubCategory::class);
+   }
+
+
 }
