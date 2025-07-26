@@ -80,8 +80,6 @@ class ProductController extends Controller
     }
 
 
-
-
     public function delete($id)
     {
         Product::deletePtroduct($id);

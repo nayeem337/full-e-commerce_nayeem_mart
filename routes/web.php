@@ -66,6 +66,7 @@ Route::middleware(['customer'])->group(function () {
 
 
 // SSLCOMMERZ Start
+
 Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);
 Route::get('/example2', [SslCommerzPaymentController::class, 'exampleHostedCheckout']);
 
@@ -77,6 +78,7 @@ Route::post('/fail', [SslCommerzPaymentController::class, 'fail']);
 Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
 
 Route::post('/ipn', [SslCommerzPaymentController::class, 'ipn']);
+
 //SSLCOMMERZ END
 
 
@@ -137,6 +139,6 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'), 'verified',
     Route::get('/admin/order-invoice/{id}', [AdminOrderController::class, 'showInvoice'])->name('admin.order-invoice');
     Route::get('/admin/print-invoice/{id}', [AdminOrderController::class, 'printInvoice'])->name('admin.print-invoice');
     Route::get('/admin/order-delete/{id}', [AdminOrderController::class, 'delete'])->name('admin.order-delete');
-
+    
 
 });

@@ -53,8 +53,7 @@
                                             <i class="ti-dropbox"></i>
                                         </a>
 
-                                        <a href="{{route('admin.order-delete', ['id' => $order->id])}}"
-                                           class="{{$order->order_status == "Cancel" ? 'btn btn-danger' : 'btn btn-danger btn-sm disabled'}}"
+                                        <a href="{{route('admin.order-delete', ['id' => $order->id])}}"                                         class="{{$order->order_status == "Cancel" ? 'btn btn-danger' : 'btn btn-danger btn-sm disabled'}}"
                                            title="Order Delete"
                                            onclick="return confirm('Are you sure to delete this!');">
                                             <i class="ti-trash"></i>
