@@ -141,4 +141,6 @@ Route::middleware([ 'auth:sanctum',config('jetstream.auth_session'), 'verified',
     Route::get('/admin/order-delete/{id}', [AdminOrderController::class, 'delete'])->name('admin.order-delete');
     
 
+
+    
 });

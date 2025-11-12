@@ -54,7 +54,11 @@
         let diff = finaleDate - now;
         if (diff < 0) {
             document.querySelector('.alert').style.display = 'block';
-            //  document.querySelector('.container').style.display = 'none';
+            //***  document.querySelector('.container').style.display = 'none';  ***//
+
+            // 🔧 Fixed: The header (topbar) section was hidden on the Home page because this container was set to 'none'.
+            // In this project, we want the header visible — so we set display to 'block' instead.
+
             document.querySelector('.container').style.display = 'block';
         }
 
